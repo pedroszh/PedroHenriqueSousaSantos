@@ -7,12 +7,12 @@ test('Deve visualizar informações de um planeta específico', async () => {
     expect(resposta.body.population).toBe('200000');
 });
 
-// test('Deve listar todos os planetas', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/planets/');
-//     expect(resposta.status).toBe(200);
-//     expect(resposta.body.results.length).toBeGreaterThan(0);
-//     expect(resposta.body.results[0].name).toBeDefined();
-// });
+test('Deve listar todos os planetas', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/planets/');
+    expect(resposta.status).toBe(200);
+    expect(resposta.body.results.length).toBeGreaterThan(0);
+    expect(resposta.body.results[0].name).toBeDefined();
+});
 
 // test('Deve visualizar informações de uma nave específica', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/starships/9/');
