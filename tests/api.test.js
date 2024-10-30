@@ -19,10 +19,10 @@ test('Deve retornar dados da nave Millennium Falcon', async () => {
 });
 
 // // Teste 4
-// test('Deve retornar dados da nave X-wing', async () => {
-//   const response = await axios.get('https://swapi.dev/api/starships/12/');
-//   expect(response.data.name).toBe('X-wing');
-// });
+test('Deve retornar dados da nave X-wing', async () => {
+  const response = await axios.get('https://swapi.dev/api/starships/12/');
+  expect(response.data.name).toBe('X-wing');
+});
 
 // // Teste 5
 // test('Deve retornar dados do filme A New Hope', async () => {
@@ -58,7 +58,7 @@ test('Deve retornar dados da nave Millennium Falcon', async () => {
 // });
 
 // // Teste 10
-// test('Deve retornar dados da espécie Wookiee', async () => {
+// test('Deve retornar dados da espécie Wookie', async () => {
 //   const response = await axios.get('https://swapi.dev/api/species/3/');
 //   expect(response.data.name).toBe('Wookie');
 // });
