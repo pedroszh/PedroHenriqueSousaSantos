@@ -46,10 +46,10 @@ test('Deve retornar erro 404 para rota inexistente', async () => {
 });
 
 // // Teste 8
-// test('Deve retornar dados do personagem Luke Skywalker', async () => {
-//   const response = await axios.get('https://swapi.dev/api/people/1/');
-//   expect(response.data.name).toBe('Luke Skywalker');
-// });
+test('Deve retornar dados do personagem Luke Skywalker', async () => {
+  const response = await axios.get('https://swapi.dev/api/people/1/');
+  expect(response.data.name).toBe('Luke Skywalker');
+});
 
 // // Teste 9
 // test('Deve retornar dados do personagem Darth Vader', async () => {
