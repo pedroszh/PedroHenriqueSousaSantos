@@ -31,10 +31,10 @@ test('Deve retornar dados do filme A New Hope', async () => {
 });
 
 // // Teste 6
-// test('Deve retornar dados do filme The Empire Strikes Back', async () => {
-//   const response = await axios.get('https://swapi.dev/api/films/2/');
-//   expect(response.data.title).toBe('The Empire Strikes Back');
-// });
+test('Deve retornar dados do filme The Empire Strikes Back', async () => {
+  const response = await axios.get('https://swapi.dev/api/films/2/');
+  expect(response.data.title).toBe('The Empire Strikes Back');
+});
 
 // // Teste 7
 // test('Deve retornar erro 404 para rota inexistente', async () => {
