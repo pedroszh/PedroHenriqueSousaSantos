@@ -14,12 +14,12 @@ test('Deve listar todos os planetas', async () => {
     expect(resposta.body.results[0].name).toBeDefined();
 });
 
-// test('Deve visualizar informações de uma nave específica', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/starships/9/');
-//     expect(resposta.status).toBe(200);
-//     expect(resposta.body.name).toBe('Death Star');
-//     expect(resposta.body.model).toBe('DS-1 Orbital Battle Station');
-// });
+test('Deve visualizar informações de uma nave específica', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/starships/9/');
+    expect(resposta.status).toBe(200);
+    expect(resposta.body.name).toBe('Death Star');
+    expect(resposta.body.model).toBe('DS-1 Orbital Battle Station');
+});
 
 // test('Deve listar todas as naves', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/starships/');
