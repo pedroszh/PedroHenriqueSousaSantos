@@ -25,10 +25,10 @@ test('Deve retornar dados da nave X-wing', async () => {
 });
 
 // // Teste 5
-// test('Deve retornar dados do filme A New Hope', async () => {
-//   const response = await axios.get('https://swapi.dev/api/films/1/');
-//   expect(response.data.title).toBe('A New Hope');
-// });
+test('Deve retornar dados do filme A New Hope', async () => {
+  const response = await axios.get('https://swapi.dev/api/films/1/');
+  expect(response.data.title).toBe('A New Hope');
+});
 
 // // Teste 6
 // test('Deve retornar dados do filme The Empire Strikes Back', async () => {
