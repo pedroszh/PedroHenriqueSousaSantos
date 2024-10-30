@@ -37,13 +37,13 @@ test('Deve retornar dados do filme The Empire Strikes Back', async () => {
 });
 
 // // Teste 7
-// test('Deve retornar erro 404 para rota inexistente', async () => {
-//   try {
-//     await axios.get('https://swapi.dev/api/heroes/');
-//   } catch (error) {
-//     expect(error.response.status).toBe(404);
-//   }
-// });
+test('Deve retornar erro 404 para rota inexistente', async () => {
+  try {
+    await axios.get('https://swapi.dev/api/heroes/');
+  } catch (error) {
+    expect(error.response.status).toBe(404);
+  }
+});
 
 // // Teste 8
 // test('Deve retornar dados do personagem Luke Skywalker', async () => {
