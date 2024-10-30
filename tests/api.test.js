@@ -7,10 +7,10 @@ test('Deve retornar dados do planeta Tatooine', async () => {
 });
 
 // Teste 2
-// test('Deve retornar dados do planeta Alderaan', async () => {
-//   const response = await axios.get('https://swapi.dev/api/planets/2/');
-//   expect(response.data.name).toBe('Alderaan');
-// });
+test('Deve retornar dados do planeta Alderaan', async () => {
+  const response = await axios.get('https://swapi.dev/api/planets/2/');
+  expect(response.data.name).toBe('Alderaan');
+});
 
 // // Teste 3
 // test('Deve retornar dados da nave Millennium Falcon', async () => {
