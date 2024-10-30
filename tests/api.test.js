@@ -58,7 +58,7 @@ test('Deve retornar dados do personagem Darth Vader', async () => {
 });
 
 // // Teste 10
-// test('Deve retornar dados da espécie Wookie', async () => {
-//   const response = await axios.get('https://swapi.dev/api/species/3/');
-//   expect(response.data.name).toBe('Wookie');
-// });
+test('Deve retornar dados da espécie Wookie', async () => {
+  const response = await axios.get('https://swapi.dev/api/species/3/');
+  expect(response.data.name).toBe('Wookie');
+});
