@@ -21,12 +21,12 @@ test('Deve visualizar informações de uma nave específica', async () => {
     expect(resposta.body.model).toBe('DS-1 Orbital Battle Station');
 });
 
-// test('Deve listar todas as naves', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/starships/');
-//     expect(resposta.status).toBe(200);
-//     expect(resposta.body.results.length).toBeGreaterThan(0);
-//     expect(resposta.body.results[0].name).toBeDefined();
-// });
+test('Deve listar todas as naves', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/starships/');
+    expect(resposta.status).toBe(200);
+    expect(resposta.body.results.length).toBeGreaterThan(0);
+    expect(resposta.body.results[0].name).toBeDefined();
+});
 
 // test('Deve visualizar informações de um filme específico', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/films/1/');
