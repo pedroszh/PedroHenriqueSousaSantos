@@ -28,12 +28,12 @@ test('Deve listar todas as naves', async () => {
     expect(resposta.body.results[0].name).toBeDefined();
 });
 
-// test('Deve visualizar informações de um filme específico', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/films/1/');
-//     expect(resposta.status).toBe(200);
-//     expect(resposta.body.title).toBe('A New Hope');
-//     expect(resposta.body.director).toBe('George Lucas');
-// });
+test('Deve visualizar informações de um filme específico', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/films/1/');
+    expect(resposta.status).toBe(200);
+    expect(resposta.body.title).toBe('A New Hope');
+    expect(resposta.body.director).toBe('George Lucas');
+});
 
 // test('Deve listar todos os filmes', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/films/');
