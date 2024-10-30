@@ -47,10 +47,10 @@ test('Deve retornar erro ao acessar uma rota inexistente', async () => {
     expect(resposta.status).toBe(404);
 });
 
-// test('Deve retornar erro ao buscar uma pessoa inexistente', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/people/9999/');
-//     expect(resposta.status).toBe(404);
-// });
+test('Deve retornar erro ao buscar uma pessoa inexistente', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/people/9999/');
+    expect(resposta.status).toBe(404);
+});
 
 // test('Deve retornar erro ao buscar um planeta inexistente', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/planets/9999/');
