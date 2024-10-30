@@ -35,12 +35,12 @@ test('Deve visualizar informações de um filme específico', async () => {
     expect(resposta.body.director).toBe('George Lucas');
 });
 
-// test('Deve listar todos os filmes', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/films/');
-//     expect(resposta.status).toBe(200);
-//     expect(resposta.body.results.length).toBeGreaterThan(0);
-//     expect(resposta.body.results[0].title).toBeDefined();
-// });
+test('Deve listar todos os filmes', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/films/');
+    expect(resposta.status).toBe(200);
+    expect(resposta.body.results.length).toBeGreaterThan(0);
+    expect(resposta.body.results[0].title).toBeDefined();
+});
 
 // test('Deve retornar erro ao acessar uma rota inexistente', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/heroes/');
