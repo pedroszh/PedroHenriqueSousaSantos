@@ -42,10 +42,10 @@ test('Deve listar todos os filmes', async () => {
     expect(resposta.body.results[0].title).toBeDefined();
 });
 
-// test('Deve retornar erro ao acessar uma rota inexistente', async () => {
-//     const resposta = await request('https://swapi.dev/api').get('/heroes/');
-//     expect(resposta.status).toBe(404);
-// });
+test('Deve retornar erro ao acessar uma rota inexistente', async () => {
+    const resposta = await request('https://swapi.dev/api').get('/heroes/');
+    expect(resposta.status).toBe(404);
+});
 
 // test('Deve retornar erro ao buscar uma pessoa inexistente', async () => {
 //     const resposta = await request('https://swapi.dev/api').get('/people/9999/');
